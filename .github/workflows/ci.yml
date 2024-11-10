@@ -55,6 +55,9 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
+      - name: Install gems
+        run: bundle install
+
       - name: Set execute permissions for rubocup
         run: chmod +x bin/rubocup
 
